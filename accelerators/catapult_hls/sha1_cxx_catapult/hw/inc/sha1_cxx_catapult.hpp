@@ -17,8 +17,7 @@ typedef ac_int<DMA_WIDTH, false> dma_data_t;
 // PLM and data dimensions
 #define PLM_WIDTH 32
 #define PLM_IN_SIZE SHA1_MAX_BLOCK_SIZE
-// TODO: workaround, make PLM 1 word bigger 5 -> 6
-#define PLM_OUT_SIZE (SHA1_DIGEST_WORDS+1)
+#define PLM_OUT_SIZE (SHA1_DIGEST_WORDS)
 
 // Encapsulate the PLM array in a templated struct
 template <class T, unsigned S>
